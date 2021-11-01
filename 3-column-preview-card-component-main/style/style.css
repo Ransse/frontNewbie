@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url(../fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+img {
+    margin-top: 45px;
+    width: 55px;
+    height: 35px;
+}
+
+h2 {
+    font-family: "Big Shoulders Display";
+    font-size: 32px;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    margin-bottom: 35%;
+}
+
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 63%;
+}
+
+.box {
+    width: 75%;
+    justify-content: space-between;
+}
+
+#sedans-section {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#suvs-section {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury-section {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.box a {
+    font-family: "Lexend Deca";
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .475rem 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    width: min-content;
+    margin-bottom: 25%;
+}
+
+.box a:focus {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.bright-orange {
+    color: hsl(31, 77%, 52%);
+}
+.dark-cyan {
+    color: hsl(184, 100%, 22%);
+}
+.very-dark-cyan {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        position: absolute;
+        transform: translate(0%, 0%);
+        width: 85%;
+        left: 7%;
+        top: 3%;
+    }
+    p {
+        margin-bottom: 10%;
+    }
+    .box a {
+        margin-bottom: 35px;
+    }
+    #sedans-section {
+        border-radius: 10px 10px 0 0;
+    }
+    #luxury-section {
+        border-radius: 0 0 10px 10px;
+    }
+    img {
+        margin-top: 35px;
+    }
+}

@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: #fff;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#card {
+    display: flex;
+    width: 1080px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+#card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#card-title {
+    font-family: "Inter";
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: hsl(0, 0%, 100%);
+}
+
+#card-title span {
+    color: hsl(277, 64%, 61%);
+}
+
+#card-text-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 60%;
+    width: 70%;
+}
+
+.stat-heading {
+    font-family: "Inter";
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#card-text-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    width: 70%;
+}
+
+#card-text-footer div p {
+    font-family: "Lexend Deca";
+}
+
+.card-text-footer-element p {
+    font-family: "Inter";
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 10px;
+}
+
+#card-summary {
+    font-family: "Inter";
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    margin-top: 0;
+}
+
+#img-desktop {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+#img-mobile {
+    display: none;
+}
+
+#mobile-overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    background-color: hsla(277, 64%, 61%, 0.6);
+}
+
+#desktop-overlay {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 446px;
+    background-color: hsla(277, 64%, 61%, 0.6);
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 768px) {
+    #img-desktop {
+        display: none;
+    }
+    #img-mobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    #mobile-overlay {
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+    #desktop-overlay {
+        display: none;
+    }
+    #card {
+        flex-direction: column;
+        width: 375px;
+    }
+    #card-text {
+        width: 100%;
+        flex: 99;
+    }
+    #card-text-footer {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    h1 {
+        margin-bottom: 0;
+        font-size: 26px;
+    }
+    #card-text-body {
+        text-align: center;
+    }
+
+    .card-text-footer-element {
+        width: 30%;
+        padding-bottom: 15px;
+    }
+}
