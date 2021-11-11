@@ -1,0 +1,245 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(#af68ea, #7c63e5, #6a63e7);
+    margin: 0;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 70%;
+    height: 450px;
+    padding: 15px 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+#faqTextContent {
+    display: flex;
+    width: 50%;
+}
+
+h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+}
+
+section {
+    font-size: 14px;
+    width: 65%;
+}
+
+#sectionsGroup {
+    width: 100%;
+    height: 80%;
+    margin-top: 20%;
+}
+
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    padding: 15px 0px 15px 0px;  
+    text-shadow: 0px 0px 0px transparent;
+    text-align: left;
+    font-size: 15px;
+    width: 120%;
+    color: #626273;
+}
+
+button:first-of-type {
+    border-top: none;
+}
+
+button span {
+    position: relative;
+    top: 48%;
+    content: url(../images/icon-arrow-down.svg);
+    text-align: right;
+    float: right;
+}
+    
+button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    text-shadow: 0px 0px 0px transparent;
+    color: orange;
+    cursor: pointer;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+p {
+    color: #7c7c7d;
+}
+
+#faqImagesDesktop {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    width: 50%;
+}
+
+#faqImagesMobile {
+    display: none;
+}
+
+#background-pattern {
+    position: relative;
+    max-width: 105%;
+    height: auto;
+    right: 100px;
+    z-index: 0;
+}
+
+#woman {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: -80px;
+    top: 10%;
+}
+
+#uglySquare {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 95px;
+    top: 43%;
+    z-index: 999;
+}
+
+.content-panel {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.rotation {
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (max-width: 999px) {
+    main {
+        flex-direction: column;
+        height: 70%;
+        width: 88%;
+        top: 55%;
+    }
+
+    h1 {
+        position: relative;
+        left: 35%;
+    }
+
+    #faqImagesDesktop {
+        display: none;
+    }
+
+    #faqImagesMobile {
+        display: block;
+    }
+
+    #womanMobile {
+        position: absolute;
+        top: -110px;
+        right: 7%;
+        width: 85%;
+    }
+
+    #background-pattern-mobile {
+        position: absolute;
+        right: 12%;
+    }
+
+    #faqImagesMobile img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #uglySquare {
+        display: none;
+    }
+
+    #faqImagesMobile, #faqTextContent {
+        width: 100%;
+    }
+
+    #sectionsGroup {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 120%;
+    }
+
+    #faqTextContent {
+        position: absolute;
+        top: 25%;
+    }
+    
+}
+
+@media only screen and (min-width: 505px) {
+    #womanMobile {
+        top: -135px;
+        right: 13%;
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    #womanMobile {
+        width: 60%;
+        right: 21%;
+    }
+    #background-pattern-mobile {
+        right: 33%;
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    #womanMobile {
+        width: 45%;
+        right: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1150px) {
+    #uglySquare {
+        left: 50px;
+        top: 40%;
+    }
+}
