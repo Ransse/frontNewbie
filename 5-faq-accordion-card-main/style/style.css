@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url(../../fonts/Kumbh-Sans/KumbhSans-VariableFont_wght.ttf);
+}
+
 html {
     height: 100%;
 }
@@ -38,6 +43,7 @@ h1 {
     font-size: 35px;
     position: absolute;
     top: 25px;
+    font-family: "Kumbh Sans";
 }
 
 .section {
@@ -52,6 +58,7 @@ h1 {
 }
 
 button {
+    font-family: "Kumbh Sans";
     background: transparent;
     box-shadow: 0px 0px 0px transparent;
     border: 0px solid transparent;
@@ -96,6 +103,7 @@ button:focus {
 }
 
 p {
+    font-family: "Kumbh Sans";
     color: #7c7c7d;
 }
 

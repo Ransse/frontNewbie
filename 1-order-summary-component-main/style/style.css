@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Red hat display";
-    src: url("fonts/RedHatDisplay-VariableFont_wght.ttf"),
-            url("fonts/RedHatDisplay-Italic-VariableFont_wght.ttf")
+    src: url("../../fonts/Red-Hat-Display/RedHatDisplay-VariableFont_wght.ttf"),
+            url("../../fonts/Red-Hat-Display/RedHatDisplay-Italic-VariableFont_wght.ttf")
 }
 
 body {

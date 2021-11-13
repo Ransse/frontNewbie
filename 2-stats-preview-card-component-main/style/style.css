@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
 }
 @font-face {
     font-family: "Lexend Deca";
-    src: url("../fonts/LexendDeca-VariableFont_wght.ttf");
+    src: url("../../fonts/Lexend-Deca/LexendDeca-VariableFont_wght.ttf");
 }
 
 body {

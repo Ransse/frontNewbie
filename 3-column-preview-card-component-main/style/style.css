@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Lexend Deca";
-    src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+    src: url(../../fonts/Lexend-Deca/LexendDeca-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Big Shoulders Display";
-    src: url(../fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+    src: url(../../fonts/Big-Shoulders-Display/BigShouldersDisplay-VariableFont_wght.ttf);
 }
 
 body {
