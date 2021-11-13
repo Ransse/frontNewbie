@@ -40,7 +40,7 @@ h1 {
     top: 25px;
 }
 
-section {
+.section {
     font-size: 14px;
     width: 65%;
 }
@@ -133,8 +133,8 @@ p {
     max-width: 100%;
     height: auto;
     position: absolute;
-    left: 95px;
-    top: 43%;
+    left: -105px;
+    top: 39%;
     z-index: 999;
 }
 
@@ -248,7 +248,7 @@ p {
         background-position: -666px -355px;
     }
     #uglySquare {
-        left: 50px;
-        top: 40%;
+        left: -105px;
+        top: 35%;
     }
 }
