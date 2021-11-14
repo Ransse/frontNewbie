@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Spartan";
+    src: url(../../fonts/Spartan/Spartan-VariableFont_wght.ttf);
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-family: "Spartan";
+    font-weight: 400;
+    width: 75%;
+    height: 75%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.w-10 { width: 10%; }
+.w-20 { width: 20%; }
+.w-30 { width: 30%; }
+.w-40 { width: 40%; }
+.w-45 { width: 45%; }
+.w-50 { width: 50%; }
+.w-60 { width: 60%; }
+.w-70 { width: 70%; }
+.w-80 { width: 80%; }
+.w-90 { width: 90%; }
+.w-100 { width: 100%; }
+
+.h-50 { height: 50%; }
+.h-60 { height: 60%; }
+.h-70 { height: 70%; }
+.h-80 { height: 80%; }
+.h-90 { height: 90%; }
+.h-100 { height: 100%; }
+
+.color-grayish {
+    color: hsl(303, 10%, 53%);
+}
+
+.color-white {
+    color: hsl(0, 0%, 100%);
+}
+
+.color-pink {
+    color: hsl(333, 80%, 67%);
+}
+
+.font-weight-semi-bold {
+    font-weight: 500;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    margin: 0;
+    font-size: 45px;
+}
+
+.ratingBox {
+    padding: 15px;
+    background-color: hsla(333, 80%, 67%, 0.1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.ratingBox:nth-child(2) {
+    margin-left: 30px;
+}
+.ratingBox:nth-child(3) {
+    margin-left: 60px;
+}
+
+.ratingBox  .ratingText {
+    color: hsl(300, 43%, 22%);
+    font-size: 14px;
+}
+
+.presentationBox {
+    padding: 0px 5px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    width: 30%;
+}
+
+.presentationBox:nth-child(2) {
+    margin-top: 20px;
+}
+
+.presentationBox:nth-child(3) {
+    margin-top: 40px;
+}
+
+.presentationBox .presentationImage {
+    border-radius: 60px;
+    width: 13%;
+    margin-right: 15px;
+}
+
+.presentationBox .presentationBoxContent {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.presentationBox p {
+    font-family: "Spartan";
+    font-size: 14px;
+}
+
+.stars {
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+#upperPart {
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 1197px) {
+    .ratingBox {
+        width: 100%;
+    }
+
+    .presentationBox {
+        height: 90%;
+    }
+
+    .presentationBox .presentationImage {
+        width: 20%;
+    }
+}
+
+
+
+@media screen and (max-width: 972px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .ratingBox {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ratingBox:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .ratingBox:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #upperPart {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+        height: 100%;
+    }
+
+    #upperPart div {
+        width: 100%;
+    }
+
+    #lowerPart div {
+        width: 100%;
+    }
+
+    #lowerPart {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #container {
+        font-size: 15px;
+        font-family: "Spartan";
+        font-weight: 400;
+        width: 50%;
+        height: 100%;
+        top: 85%;
+    }
+
+    .stars {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .presentationBox {
+        padding: 0;
+        padding-bottom: 15px;
+    }
+
+    .presentationBox .presentationBoxContent p{
+        width: 80%;
+    }
+
+    .presentationBox:nth-child(2) {
+        margin-top: 20px;
+    }
+    
+    .presentationBox:nth-child(3) {
+        margin-top: 20px;
+        margin-bottom: 20%;
+    }
+}
+
+
+@media screen and (max-width: 779px) {
+   #container {
+       top: 85%;
+       width: 80%;
+       margin-bottom: 5%;
+   }
+
+   .presentationBox:nth-child(3) {
+    margin-bottom: 20%;
+    }
+}
